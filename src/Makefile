@@ -4,8 +4,8 @@ obj = $(src:.c=.o)
 NAME    := roccat-vulcan
 BINDIR  := /usr/bin
 UDEVDIR := /etc/udev/rules.d
-CFLAGS   = -I/usr/include/libevdev-1.0
-LDFLAGS  = -levdev -lhidapi-libusb -ludev
+CFLAGS   = -O2 -I/usr/include/libevdev-1.0
+LDFLAGS  = -O2 -levdev -lhidapi-libusb -ludev
 
 .PHONY: all
 all: $(NAME)
