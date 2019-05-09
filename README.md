@@ -84,3 +84,8 @@ start-stop-daemon -S -b -x /usr/bin/roccat-vulcan -- [options]
 ```
 This will prevent from running the binary twice. You can put
 this in `/etc/rc.local` or other equivalent locations.
+
+## Running as systemd user service
+```
+systemctl --user enable --now roccat-vulcan.service
+```
