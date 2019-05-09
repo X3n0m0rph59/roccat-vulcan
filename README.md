@@ -10,7 +10,7 @@ This little binary adds some bling to your Roccat Vulcan 100/120/121 Keyboard wh
 
 ```bash
 yay -Sy aur/roccat-vulcan
-sudo udevadm control --reload-rules && udevadm trigger
+sudo udevadm control --reload-rules && sudo udevadm trigger
 # You might have to replug your keyboard or reboot at this
 # point, so udev can update the permissions on the device nodes.
 roccat-vulcan
@@ -22,7 +22,7 @@ roccat-vulcan
 sudo add-apt-repository ppa:duncanthrax/roccat-vulcan
 sudo apt-get update
 sudo apt install roccat-vulcan
-sudo udevadm control --reload-rules && udevadm trigger
+sudo udevadm control --reload-rules && sudo udevadm trigger
 # You might have to replug your keyboard or reboot at this
 # point, so udev can update the permissions on the device nodes.
 roccat-vulcan
