@@ -1,0 +1,8 @@
+[Unit]
+Description=Roccat Vulcan
+
+[Service]
+ExecStart=/usr/bin/roccat-vulcan
+
+[Install]
+WantedBy=default.target
