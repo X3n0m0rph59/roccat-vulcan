@@ -1,2 +1,2 @@
-ACTION=="add", SUBSYSTEMS=="usb", ATTRS{idVendor}=="1e7d", ATTRS{idProduct}=="307a", RUN+="/usr/bin/systemctl --user restart roccat-vulcan.service"
-ACTION=="add", SUBSYSTEMS=="usb", ATTRS{idVendor}=="1e7d", ATTRS{idProduct}=="3098", RUN+="/usr/bin/systemctl --user restart roccat-vulcan.service"
+ACTION=="add", SUBSYSTEMS=="usb", ATTRS{idVendor}=="1e7d", ATTRS{idProduct}=="307a", TAG+="systemd", ENV{SYSTEMD_USER_WANTS}="roccat-vulcan.service"
+ACTION=="add", SUBSYSTEMS=="usb", ATTRS{idVendor}=="1e7d", ATTRS{idProduct}=="3098", TAG+="systemd", ENV{SYSTEMD_USER_WANTS}="roccat-vulcan.service"
